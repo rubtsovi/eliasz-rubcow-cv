@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const env = process.env.NODE_ENV || 'development';
+const webpack = require('webpack');
 
 module.exports = {
     mode: env,
@@ -16,11 +17,11 @@ module.exports = {
                 }
             },
             {
-                test: /\.mustache$/,
+                test: /\.hbs$/,
                 use: {
-                    loader: "mustache-loader",
+                    loader: "handlebars-loader",
                     options: {
-                        minify: env === 'production'
+                        inlineRequires: '/assets/images/'
                     }
                 }
             },
@@ -41,6 +42,7 @@ module.exports = {
                     loader: "file-loader",
                     options: {
                         outputPath: "images",
+                        name: env === 'development' ? '[name].[ext]' : '[hash].[ext]'
                     }
                 }
             },
@@ -58,12 +60,17 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.mustache"
+            template: "./src/index.hbs",
         }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
         new CleanWebpackPlugin(),
+        new webpack.LoaderOptionsPlugin({
+            options: {
+                handlebarsLoader: {}
+            }
+        })
     ]
 }

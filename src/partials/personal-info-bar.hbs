@@ -1,0 +1,45 @@
+<div id="name-block" class="d-flex flex-column flex-md-row flex-lg-column align-items-center">
+    <div id="my-photo-container" class="mx-md-5 col px-0 mx-lg-auto">
+        <div class="rounded-circle">
+            <img src="../assets/images/photo.jpg" alt="{{name}}" class="w-100 h-100">
+        </div>
+    </div>
+    <div id="name-block" class="text-center text-white text-uppercase py-4">
+        <h1 class="h2 font-weight-bold">{{name}}</h1>
+        <div class="h5 font-weight-light">{{profession}}</div>
+    </div>
+</div>
+<div class="d-flex row">
+    <div id="contact-data-block" class="col-12 col-md-6 col-lg-12 pt-5 pb-4">
+        <div class="block-title">Dane kontaktowe</div>
+            {{#each blocks.contactBlock}}
+                <div class="contact-line d-flex">
+                    <div class="contact-icon rounded-circle bg-white text-primary">
+                        <i class="{{icon}}"></i>
+                    </div>
+                    <div class="col pr-0 text-white">
+                        {{{content}}}
+                    </div>
+                </div>
+            {{/each}}
+    </div>
+
+    <div id="skills-block" class="col-12 col-md-6 col-lg-12 pt-5 pb-4 text-white">
+        <div class="block-title">Moje umiejętności</div>
+        {{#each blocks.skillsBlock}}
+            <div class="single-skill">
+            <div class="skill-name">
+                <i class="{{icon}}"></i>
+            </div>
+            <div class="progress bg-white">
+                <div class="progress-bar position-relative" role="progressbar" style="width:{{level}}%" aria-valuenow="{{level}}"
+                    aria-valuemin="0" aria-valuemax="100"><span class="skill-pointer"></span></div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<div id="about-me-block" class="pt-5 text-white">
+    <div class="block-title">O mnie</div>
+    <p>{{blocks.aboutBlockText}}</p>
+</div>

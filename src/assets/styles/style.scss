@@ -3,3 +3,77 @@
 @import "mixins";
 
 @import "typography";
+@import "bootstrap";
+
+#my-photo-container{
+    max-width: 210px;
+    >div{
+        overflow: hidden;
+        @include scalable-box($children-class: img){
+            object-fit: cover;
+            object-position: 0 15%;
+        };
+
+    }
+}
+
+#name-block{
+    .h5{
+        letter-spacing: .35rem;
+    }
+}
+
+.block-title{
+    @extend .h4, .text-white, .text-uppercase, .text-center, .mb-4;
+}
+
+.contact-icon{
+    text-align: center;
+    width: $line-height-base * 2 + rem;
+    height: $line-height-base * 2 + rem;
+    line-height: $line-height-base * 2 - .1 + rem;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.contact-line{
+    &:not(:last-child){
+        margin-bottom: map-get($map: $spacers, $key: 3);
+    }
+    a{
+        color: $white;
+        &:hover{
+            color: $white;
+        }
+    }
+}
+
+#skills-block{
+    @at-root .skill-name{
+        font-size: 1.3rem;
+        margin-bottom: map-get($map: $spacers, $key: 2);
+    }
+    @at-root .single-skill{
+        @extend .py-1;
+    }
+    .progress{
+        overflow: visible;
+    }
+
+    @at-root .skill-pointer{
+        display: block;
+        position: absolute;
+        width: $progress-bar-circle-width;
+        height: $progress-bar-circle-width;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        background: $white;
+        border: 1px solid $primary;
+        border-radius: 50%;
+        left: -$progress-bar-circle-width / 2;
+    }
+}
+
+
+@import 'print';

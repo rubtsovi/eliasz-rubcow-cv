@@ -1,0 +1,35 @@
+@media print {
+    .container{
+        // @include make-container($print-gutter-width);
+    }
+    html{
+        font-size: 11pt;
+    }
+    #root{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    #personal-info-bar{
+        @include make-col-ready($print-gutter-width);
+        @include make-col(4);
+        height: 38cm;
+    }
+
+    a{
+        text-decoration: none!important;
+        &[data-print-text]:after{
+            content: ' - ' attr(data-print-text);
+        }
+    }
+    #my-photo-container{
+        margin-top: map-get($map: $spacers, $key: 4);
+    }
+
+    #skills-block, #contact-data-block{
+        @include make-col(12);
+    }
+
+    #name-block{
+        flex-direction: column!important;
+    }
+}

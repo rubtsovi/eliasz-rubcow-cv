@@ -12,8 +12,19 @@ $font-weight-base: $font-weight-light;
 
 $font-families: (
   "Muli": (
-    $font-weight-light: "muli-300",
-    $font-weight-normal: "muli-regular",
-    $font-weight-bold: "muli-800"
+    $font-weight-light: "Muli-Light",
+    $font-weight-normal: "Muli-Regular",
+    $font-weight-bold: "Muli-ExtraBold"
   )
 );
+
+$font-family-sans-serif: Muli, Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-base: $font-family-sans-serif;
+
+$primary: #1875d1;
+$progress-height: 2px;
+$progress-bar-bg: transparent;
+$progress-bar-circle-width: 10px;
+
+$print-gutter-width: 1.5cm;
