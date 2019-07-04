@@ -1,0 +1,46 @@
+{
+    "block_title": "Znam się również na ...",
+    "block_icon": "fas fa-paperclip",
+    "data": [
+        {
+            "icon": "fab fa-symfony",
+            "title": "Symfony"
+        },
+        {
+            "icon": "fab fa-angular",
+            "title": "Angular"
+        },
+        {
+            "icon": "facustom fa-jquery-icon",
+            "title": "jQuery"
+        },
+        {
+            "icon": "fab fa-bootstrap",
+            "title": "Bootstrap"
+        },
+        {
+            "icon": "facustom fa-webpack-icon",
+            "title": "Webpack"
+        },
+        {
+            "icon": "fab fa-sass",
+            "title": "Sass"
+        },
+        {
+            "icon": "facustom fa-mysql-icon",
+            "title": "MySQL"
+        },
+        {
+            "icon": "fab fa-git-alt",
+            "title": "Git"
+        },
+        {
+            "icon": "fab fa-yarn",
+            "title": "Yarn"
+        },
+        {
+            "icon": "facustom fa-photoshop-icon",
+            "title": "Photoshop"
+        }
+    ]
+}

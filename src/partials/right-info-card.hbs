@@ -1,29 +1,22 @@
 <article class="card">
     <div class="card-body">
-        <h5 class="card-title">Wykształcenie</h5>
-        <div class="info-card-item d-flex">
-            <div class="info-card-item-year">
-                1997-2008
+        {{> card-header}}
+        {{#each data}}
+        <div class="info-card-item">
+            <div class="h5 text-primary mb-0">{{title}}</div>
+            {{#if subtitle}}
+            <div class="h6 text-muted mb-3">{{subtitle}}</div>
+            {{/if}}
+            <div class="info-card-item-year text-black-50 small">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="year-from">{{from}}</span>
+                -
+                <span class="year-to">{{to}}</span>
             </div>
             <div class="info-card-item-content">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quidem veniam recusandae est officia adipisci consequuntur illo alias unde accusamus!
+                {{description}}
             </div>
         </div>
-        <div class="info-card-item d-flex">
-            <div class="info-card-item-year">
-                1997-2008
-            </div>
-            <div class="info-card-item-content">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quidem veniam recusandae est officia adipisci consequuntur illo alias unde accusamus!
-            </div>
-        </div>
-        <div class="info-card-item d-flex">
-            <div class="info-card-item-year">
-                1997-2008
-            </div>
-            <div class="info-card-item-content">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quidem veniam recusandae est officia adipisci consequuntur illo alias unde accusamus!
-            </div>
-        </div>
+        {{/each}}
     </div>
 </article>

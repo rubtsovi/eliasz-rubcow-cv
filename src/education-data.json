@@ -1,0 +1,24 @@
+{
+    "block_title": "Wykształcenie",
+    "block_icon": "fas fa-graduation-cap",
+    "data": [
+        {
+            "from": 2014,
+            "to": "dziś",
+            "title": "Internet i inne ",
+            "description": "Od dłuższego czasu poszerzam swoją wiedzę przez liczne szkolenia on-line, warsztaty programowania oraz niewyczerpalne źródło nowych informacji - Internet. Regularnie biorę udział w meetup'ach WarsawJS."
+        },
+        {
+            "from": 2009,
+            "to": 2014,
+            "title": "Politechnika Warszawska, Wydział Elektryczny",
+            "description": "W Politechnice Warszawskiej najpierw studiowałem na wydziele Elektroniki i Technik Informacyjnych, po czym zmieniłem wydział na Elektryczny. Na tym wydziale wybrałem specjalizację Automatyka i Inżyneria Komputerowa. Podczas nauki na Politechnice poznałem podstawy programowania."
+        },
+        {
+            "from": 2008,
+            "to": 2009,
+            "title": "Politechnika Wrocławska",
+            "description": "W Politechnice Wrocławskiej uczęszczałem do studium języka polskiego dla obcokrajowców, gdzie oprócz języka polskiego miałem naukę matematyki, fizyki oraz informatyki."
+        }
+    ]
+}

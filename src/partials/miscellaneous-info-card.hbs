@@ -1,0 +1,16 @@
+<article class="card">
+    <div class="card-body">
+        {{> card-header}}
+        <div id="knowledges-container" class="row">
+            {{#each data }}
+                <div class="col-6 col-sm-4 py-3 knowledge-box-container">
+                    <div class="knowledge-box">
+                        <div class="d-flex flex-column align-items-center" title="{{title}}">
+                            <i class="{{icon}} display-4"></i>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</article>

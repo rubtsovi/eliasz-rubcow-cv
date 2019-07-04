@@ -75,5 +75,60 @@
     }
 }
 
+.info-card-item-year{
+    // @extend .pl-3;
+    // width: 110px;
+    // flex-shrink: 0;
+    // span{
+    //     @extend .d-block;
+    //     font-size:  1.3rem;
+    //     line-height: 1;
+    //     font-weight: $font-weight-bold;
+    // }
+}
+
+.info-card-item{
+    &:not(:last-of-type){
+        @extend .pb-4;
+    }
+}
+
+.card{
+    transition: box-shadow .2s linear;
+    &:hover{
+        box-shadow: 0 0 15px $gray-200;
+    }
+}
+
+.knowledge-box{
+    @include scalable-box(100%, div);
+}
+
+.knowledge-box-container{
+    @include media-breakpoint-up(sm){
+        @include make-col(2, 10);
+    }
+    @at-root .knowledge-box{
+        i, svg{
+            transition: color 0.2s linear;
+        }
+        >div{
+            &:after{
+                content: attr(title);
+                display: block;
+                @extend .h6;
+                margin-top: 0.3em;
+            }
+        }
+        &:hover{
+            i, svg{
+                color: $primary;
+            }
+        }
+    }
+}
+footer{
+    display: none;
+}
 
 @import 'print';
