@@ -1,0 +1,20 @@
+{
+    "block_title": "Experience",
+    "block_icon": "fas fa-laptop-code",
+    "data": [
+        {
+            "from": 2014,
+            "to": "now",
+            "title": "Web Developer",
+            "subtitle": "JELLINEK Interactive Agency",
+            "description": "In this position, I create websites based on graphic designs from scratch. Because each page is created individually for the client's needs, the administration panel is also has to be adapted to his needs, so the backend of new pages lies on my side too. I take an active part in developing new and optimizing existing functionality of the proprietary CMS system."
+        },
+        {
+            "from": 2013,
+            "to": 2014,
+            "title": "SEO specialist",
+            "subtitle": "JELLINEK Interactive Agency",
+            "description": "I started my adventure in the IT world as a SEO specialist. During website optimization, I was getting to know HTML and CSS more and more. In this position, I also learned to create the simplest pages using Wordpress, and that's how I got to know PHP and JS."
+        }
+    ]
+}

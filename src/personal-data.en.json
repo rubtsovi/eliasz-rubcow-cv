@@ -1,0 +1,48 @@
+{
+    "name": "Eliasz Rubcow",
+    "profession": "Frontend / Web Developer",
+    "blocks": {
+        "contactBlock": {
+            "title": "Contact Data",
+            "data": [
+                {
+                    "icon": "fas fa-home",
+                    "content": "ul. Kazimierza Jarząbka 16/32<br>05-500 Piaseczno"
+                },
+                {
+                    "icon": "fas fa-address-book",
+                    "content": "<a href=\"tel:+48665193438\">+48 665 193 438</a><br><a href=\"mailto:rubtsovi.90@gmail.com\">rubtsovi.90@gmail.com</a>"
+                },
+                {
+                    "icon": "fas fa-share-alt",
+                    "content": "<a href=\"https://www.linkedin.com/in/rubtsovi/\" target=\"_blank\" data-print-text=\"/in/rubtsovi/\">LinkedIn</a><br><a href=\"https://github.com/rubtsovi\" target=\"_blank\" data-print-text=\"rubtsovi\">GitHub</a>"
+                }
+            ]
+        },
+        "skillsBlock": {
+            "title": "My skills",
+            "data": [
+                {
+                    "icon": "fab fa-html5",
+                    "level": 85
+                },
+                {
+                    "icon": "fab fa-css3",
+                    "level": 90
+                },
+                {
+                    "icon": "fab fa-js",
+                    "level": 60
+                },
+                {
+                    "icon": "fab fa-php",
+                    "level": 50
+                }
+            ]
+        },
+        "aboutBlockText": {
+            "title": "About me",
+            "text": "For me, there have been no millimeters for several years - only pixels, and I see colors in hexadecimal codes. Still, the world remains infinitely diverse for me. My motto, therefore, is to believe that nothing is impossible - it's just a matter of time (and price)."
+        }
+    }
+}

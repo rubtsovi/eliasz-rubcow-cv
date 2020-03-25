@@ -1,0 +1,20 @@
+{
+    "block_title": "Doświadczenie zawodowe",
+    "block_icon": "fas fa-laptop-code",
+    "data": [
+        {
+            "from": 2014,
+            "to": "dziś",
+            "title": "Web Developer",
+            "subtitle": "Agencja interaktywna JELLINEK",
+            "description": "Na tym stanowisku samodzielnie tworzę strony internetowe na podstawie projektów graficznych od zera. Ponieważ każda strona jest tworzona indywidualnie na potrzeby klienta, panel administracyjny również ma być dostosowany do jego potrzeb, więc backend nowych stron także leży po mojej stronie. Biorę czynny udział w tworzeniu nowych i optymalizacji istniejących funkcjonalności autorskiego systemu CMS."
+        },
+        {
+            "from": 2013,
+            "to": 2014,
+            "title": "Specjalista SEO",
+            "subtitle": "Agencja Interaktywna JELLINEK",
+            "description": "Swoją przygodę w świecie IT rozpocząłem jako pozycjoner stron internetowych. Podczas optymalizacji coraz głębiej poznawałem HTMLa i CSSa. Na tym stanowisku także nauczyłem się tworzyć najprostsze strony za pomocą Wordpress'a, i tak poznałem PHPa i JSa."
+        }
+    ]
+}

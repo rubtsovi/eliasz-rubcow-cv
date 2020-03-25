@@ -10,13 +10,16 @@ import { stagger, styler, spring } from 'popmotion';
 const personalInfoPart = require('./partials/personal-info-bar.hbs');
 const infoCard = require('./partials/right-info-card.hbs');
 const miscellaneousCard = require('./partials/miscellaneous-info-card.hbs');
-const personalInfoData = require('./personal-data.json');
+const personalInfoData = require(`./personal-data.${LANG}.json`);
 
 const personalDataSection = document.getElementById('personal-info-bar');
 personalDataSection.innerHTML = personalInfoPart(personalInfoData);
-document.getElementById('education-block').innerHTML = infoCard(require('./education-data.json'));
-document.getElementById('professional-experience-block').innerHTML = infoCard(require('./professional-experience.json'));
-document.getElementById('misceallenous-block').innerHTML = miscellaneousCard(require('./miscellaneous.json'));
+document.getElementById('education-block').innerHTML = infoCard(require(`./education-data.${LANG}.json`));
+document.getElementById('professional-experience-block').innerHTML = infoCard(require(`./professional-experience.${LANG}.json`));
+document.getElementById('misceallenous-block').innerHTML = miscellaneousCard(require(`./miscellaneous.${LANG}.json`));
+if (LANG === 'en' || LANG === 'ru') {
+    document.getElementById('page-footer').remove();
+}
 // document.getElementById('professional-experience-block').innerHTML = infoCard();
 
 library.add(faHome, faAddressBook, faShareAlt, faCss3, faHtml5, faJs, faPhp, jqueryIcon, faGraduationCap, faBriefcase, faCalendarAlt, faLaptopCode, faPaperclip, faSymfony, faAngular, faYarn, webpackIcon, faBootstrap, faGitAlt, faSass, photoshopIcon, typescriptIcon, mysqlIcon);

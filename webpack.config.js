@@ -3,7 +3,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const env = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
-
 module.exports = {
     mode: env,
     devtool: env === 'development' ? "inline-source-map" : '(none)',
@@ -71,6 +70,9 @@ module.exports = {
             options: {
                 handlebarsLoader: {}
             }
+        }),
+        new webpack.DefinePlugin({
+            LANG: JSON.stringify(process.env.LANG)
         })
     ]
 }

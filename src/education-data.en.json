@@ -1,0 +1,24 @@
+{
+    "block_title": "Education",
+    "block_icon": "fas fa-graduation-cap",
+    "data": [
+        {
+            "from": 2014,
+            "to": "now",
+            "title": "Internet and others ",
+            "description": "For a long time I have been expanding my knowledge through numerous online trainings, programming workshops and an inexhaustible source of new information - the Internet. I regularly take part in WarsawJS meetups."
+        },
+        {
+            "from": 2009,
+            "to": 2014,
+            "title": "Warsaw University of Technology, Electrical Engineering Faculty",
+            "description": "At the Warsaw University of Technology, I first studied at the Faculty of Electronics and Information Technology, after which I changed the faculty to Electrical Engineering. At this faculty I chose the specialization Automation and Computer Engineering. While studying at the WUT I learned the basics of programming."
+        },
+        {
+            "from": 2008,
+            "to": 2009,
+            "title": "Wrocław University of Science and Technology",
+            "description": "At the Wrocław University of Technology I attended the Polish language study for foreigners, where in addition to the Polish language I studied mathematics, physics and computer science."
+        }
+    ]
+}

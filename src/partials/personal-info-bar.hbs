@@ -11,8 +11,8 @@
 </div>
 <div class="d-flex row">
     <div id="contact-data-block" class="col-12 col-md-6 col-lg-12 pt-5 pb-4">
-        <div class="block-title">Dane kontaktowe</div>
-            {{#each blocks.contactBlock}}
+        <div class="block-title">{{blocks.contactBlock.title}}</div>
+            {{#each blocks.contactBlock.data}}
                 <div class="contact-line d-flex">
                     <div class="contact-icon rounded-circle bg-white text-primary">
                         <i class="{{icon}}"></i>
@@ -25,8 +25,8 @@
     </div>
 
     <div id="skills-block" class="col-12 col-md-6 col-lg-12 pt-5 pb-4 text-white">
-        <div class="block-title">Moje umiejętności</div>
-        {{#each blocks.skillsBlock}}
+        <div class="block-title">{{blocks.skillsBlock.title}}</div>
+        {{#each blocks.skillsBlock.data}}
             <div class="single-skill">
             <div class="skill-name">
                 <i class="{{icon}}"></i>
@@ -40,6 +40,6 @@
     </div>
 </div>
 <div id="about-me-block" class="pt-5 text-white">
-    <div class="block-title">O mnie</div>
-    <p>{{blocks.aboutBlockText}}</p>
+    <div class="block-title">{{blocks.aboutBlockText.title}}</div>
+    <p>{{blocks.aboutBlockText.text}}</p>
 </div>
