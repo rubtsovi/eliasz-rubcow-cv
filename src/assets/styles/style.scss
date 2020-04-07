@@ -1,5 +1,5 @@
 @import "variables";
-@import "functions";
+@import "~sass-local-fonts/src/sass-local-fonts";
 @import "mixins";
 
 @import "typography";
@@ -75,7 +75,7 @@
     }
 }
 
-.info-card-item-year{
+// .info-card-item-year{
     // @extend .pl-3;
     // width: 110px;
     // flex-shrink: 0;
@@ -85,7 +85,7 @@
     //     line-height: 1;
     //     font-weight: $font-weight-bold;
     // }
-}
+// }
 
 .info-card-item{
     &:not(:last-of-type){

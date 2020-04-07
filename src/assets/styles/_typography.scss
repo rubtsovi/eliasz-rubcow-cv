@@ -1,22 +1,3 @@
-@if global-variable-exists(font-families) {
-    @each $font-family, $fonts in $font-families {
-      $formats: eot woff2 woff ttf;
-      @if (map-has-key($fonts, formats)) {
-        $formats: map-get($fonts, formats);
-        $fonts: map-remove($fonts, formats);
-      }
-  
-      @each $font-weight, $font in $fonts {
-        @include font-face(
-                $font-family: $font-family,
-                $file-path: $font-folder + $font,
-                $weight: $font-weight,
-                $file-formats: $formats
-        );
-      }
-    }
-  }
-  
   html{
     @if (type-of($root-font-size) == 'map') {
       @each $breakpoint, $html-font-size in $root-font-size {
